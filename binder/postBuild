@@ -2,7 +2,7 @@
 # Install and Sveltekit and set up for use with MyBinder.
 #---------------------------------------------------------#
 # Silently scaffold the SvelteKit demo app using npm with flags and nor interactive prompts
-npx sv create my-sveltekit-app --template demo --no-types --no-addins --pm npm
+npx -y sv create my-sveltekit-app --template demo --no-types --no-add-ons --install npm
 
 # Enter the new directory
 cd my-sveltekit-app
