@@ -1,0 +1,35 @@
+#!/bin/bash
+# Install and Sveltekit and set up for use with MyBinder.
+#---------------------------------------------------------#
+# Silently scaffold the SvelteKit demo app using npm with flags and nor interactive prompts
+npx sv create my-sveltekit-app --template demo --no-types --no-addins --pm npm
+
+# Enter the new directory
+cd my-sveltekit-app
+
+# Generate the proxy-compatible vite.config.js
+cat << 'EOF' > vite.config.js
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+    plugins: [sveltekit()],
+    server: {
+        allowedHosts: true
+    }
+});
+EOF
+
+# Generate the proxy-compatible svelte.config.js
+cat << 'EOF' > svelte.config.js
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+    kit: {
+        paths: {
+            base: process.env.JUPYTERHUB_SERVICE_PREFIX ? process.env.JUPYTERHUB_SERVICE_PREFIX + 'proxy/absolute/5173' : ''
+        }
+    }
+};
+
+export default config;
+EOF
