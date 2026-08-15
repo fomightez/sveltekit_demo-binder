@@ -8,7 +8,7 @@ Binderized SvelteKit Demo Playground.
 
 ### How to use
 
-Click the '`launch binder`' badge above to start a MyBinder-served Jupyter session with the SvelteKit Demo already installed and running.   
+Click the '`launch binder`' badge above to start a MyBinder-served Jupyter session with the SvelteKit Demostraion already installed and ready-to-run.   
 
 
 
@@ -31,4 +31,5 @@ Once the session launches, do the steps below...
 
 4. Open a new browser window or tab, paste your modified URL, and hit Enter. Give it about a minute to spin up, and reload if necessary to see your live SvelteKit app! Enjoy the Swerdle.
 
-
+Wondering more about some of the steps that allow the Sveltekit Demo to run?  
+Then you probably want to go [here](https://github.com/fomightez/svelte-binder) and try Track B to start with working through the earlier steps.
