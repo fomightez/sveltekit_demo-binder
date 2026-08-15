@@ -19,11 +19,16 @@ Once the session launches, do the steps below...
    
    Paste it in a text editor and replace the `/lab` part at the end with `/proxy/absolute/5173/`. Keep this modified URL ready.
 
-2. Start the development server:
+2. Move into the project directory:
+   ```bash
+   cd my-sveltekit-app/
+   ```
+
+3. Start the development server:
    ```bash
    npm run dev -- --host
    ```
 
-3. Open a new browser window or tab, paste your modified URL, and hit Enter. Give it about a minute to spin up, and reload if necessary to see your live SvelteKit app!
+4. Open a new browser window or tab, paste your modified URL, and hit Enter. Give it about a minute to spin up, and reload if necessary to see your live SvelteKit app! Enjoy the Swerdle.
 
 
