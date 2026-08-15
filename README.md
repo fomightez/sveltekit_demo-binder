@@ -8,7 +8,7 @@ Binderized SvelteKit Demo Playground.
 
 ### How to use
 
-Click the '`launch binder`' badge above to start a MyBinder-served Jupyter session with the SvelteKit Demo alread installed.   
+Click the '`launch binder`' badge above to start a MyBinder-served Jupyter session with the SvelteKit Demo already installed and running.   
 
 
 
